@@ -2,5 +2,5 @@
  * Created by Fox Mc-Tag on 05/10/2016.
  * Property of Mc-Tag's corporation, all rights reserved.
  */
-public interface User {
+public class NonRegisteredClient implements User {
 }
