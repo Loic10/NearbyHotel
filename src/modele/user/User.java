@@ -15,6 +15,7 @@ public abstract class User {
 
 
     public User(){}
+    public User(int ID){this.ID= ID;}
 
 
 
