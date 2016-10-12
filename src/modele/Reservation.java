@@ -5,4 +5,7 @@ package modele;
  * Property of Mc-Tag's corporation, all rights reserved.
  */
 public class Reservation {
+
+    private Int ID;
+
 }
