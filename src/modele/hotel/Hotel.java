@@ -2,6 +2,7 @@ package modele.hotel;
 
 import modele.Int;
 import modele.Varchar;
+import modele.Ville;
 
 /**
  * Created by Fox Mc-Tag on 05/10/2016.
@@ -20,10 +21,11 @@ public class Hotel {
     private Varchar description;
     private Varchar equipments;
     private boolean authorizationPets;
+    private Ville ville;
 
 
 
-    public Hotel(Varchar name, Varchar address, Varchar ZIP_code, Varchar mail, Varchar picture, Int roomAmmount, Varchar reception, Varchar description, Varchar equipments, boolean authorizationPets){
+    public Hotel(Varchar name, Varchar address, Varchar ZIP_code, Varchar mail, Varchar picture, Int roomAmmount, Varchar reception, Varchar description, Varchar equipments, boolean authorizationPets, Ville ville){
 
         this.name= name;
         this.address= address;
@@ -35,12 +37,13 @@ public class Hotel {
         this.description= description;
         this.equipments= equipments;
         this.authorizationPets= authorizationPets;
+        this.ville= ville;
     }
 
-    public Hotel(Int ID, Varchar name, Varchar address, Varchar ZIP_code, Varchar mail, Varchar picture, Int roomAmmount, Varchar reception, Varchar description, Varchar equipments, boolean authorizationPets){
+    public Hotel(Int ID, Varchar name, Varchar address, Varchar ZIP_code, Varchar mail, Varchar picture, Int roomAmmount, Varchar reception, Varchar description, Varchar equipments, boolean authorizationPets, Ville ville){
 
         this.ID= ID;
-        new Hotel(name, address, ZIP_code, mail, picture, roomAmmount, reception, description, equipments, authorizationPets);
+        new Hotel(name, address, ZIP_code, mail, picture, roomAmmount, reception, description, equipments, authorizationPets, ville);
 
 
     }
@@ -60,6 +63,7 @@ public class Hotel {
     public Varchar getDescription(){return description;}
     public Varchar getEquipments(){return equipments;}
     public boolean getAuthorizationPets(){return authorizationPets;}
+    public Ville getVille(){return ville;}
 
     public void setID(Int ID){this.ID= ID;}
     public void setName(Varchar name){this.name= name;}
@@ -72,6 +76,7 @@ public class Hotel {
     public void setDescription(Varchar description){this.description= description;}
     public void setEquipments(Varchar equipments){this.equipments= equipments;}
     public void setAuthorizationPets(boolean authorizationPets){this.authorizationPets= authorizationPets;}
+    public void setVille(Ville ville){this.ville= ville;}
 
 
 
