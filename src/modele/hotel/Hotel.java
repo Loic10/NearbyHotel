@@ -1,26 +1,29 @@
 package modele.hotel;
 
+import modele.Int;
+import modele.Varchar;
+
 /**
  * Created by Fox Mc-Tag on 05/10/2016.
  * Property of Mc-Tag's corporation, all rights reserved.
  */
 public class Hotel {
 
-    private int ID;
-    private String name;
-    private String address;
-    private String ZIP_code;
-    private String mail;
-    private String picture;
-    private int roomAmmount;
-    private String reception;
-    private String description;
-    private String equipments;
+    private Int ID;
+    private Varchar name;
+    private Varchar address;
+    private Varchar ZIP_code;
+    private Varchar mail;
+    private Varchar picture;
+    private Int roomAmmount;
+    private Varchar reception;
+    private Varchar description;
+    private Varchar equipments;
     private boolean authorizationPets;
 
 
 
-    public Hotel(String name, String address, String ZIP_code, String mail, String picture, int roomAmmount, String reception, String description, String equipments, boolean authorizationPets){
+    public Hotel(Varchar name, Varchar address, Varchar ZIP_code, Varchar mail, Varchar picture, Int roomAmmount, Varchar reception, Varchar description, Varchar equipments, boolean authorizationPets){
 
         this.name= name;
         this.address= address;
@@ -34,7 +37,7 @@ public class Hotel {
         this.authorizationPets= authorizationPets;
     }
 
-    public Hotel(int ID, String name, String address, String ZIP_code, String mail, String picture, int roomAmmount, String reception, String description, String equipments, boolean authorizationPets){
+    public Hotel(Int ID, Varchar name, Varchar address, Varchar ZIP_code, Varchar mail, Varchar picture, Int roomAmmount, Varchar reception, Varchar description, Varchar equipments, boolean authorizationPets){
 
         this.ID= ID;
         new Hotel(name, address, ZIP_code, mail, picture, roomAmmount, reception, description, equipments, authorizationPets);
@@ -46,28 +49,28 @@ public class Hotel {
 
 
     public Hotel get() {return this;}
-    public int getID(){return ID;}
-    public String getName(){return name;}
-    public String getAddress(){return address;}
-    public String getZIP_code(){return ZIP_code;}
-    public String getMail(){return mail;}
-    public String getPicture(){return picture;}
-    public int getRoomAmmount() {return roomAmmount;}
-    public String getReception(){return reception;}
-    public String getDescription(){return description;}
-    public String getEquipments(){return equipments;}
+    public Int getID(){return ID;}
+    public Varchar getName(){return name;}
+    public Varchar getAddress(){return address;}
+    public Varchar getZIP_code(){return ZIP_code;}
+    public Varchar getMail(){return mail;}
+    public Varchar getPicture(){return picture;}
+    public Int getRoomAmmount() {return roomAmmount;}
+    public Varchar getReception(){return reception;}
+    public Varchar getDescription(){return description;}
+    public Varchar getEquipments(){return equipments;}
     public boolean getAuthorizationPets(){return authorizationPets;}
 
-    public void setID(int ID){this.ID= ID;}
-    public void setName(String name){this.name= name;}
-    public void setAddress(String address){this.address= address;}
-    public void setZIP_code(String ZIP_code){this.ZIP_code= ZIP_code;}
-    public void setMail(String mail){this.mail= mail;}
-    public void setPicture(String picture){this.picture= picture;}
-    public void setRoomAmmount(int roomAmmount) {this.roomAmmount= roomAmmount;}
-    public void setReception(String reception){this.reception= reception;}
-    public void setDescription(String description){this.description= description;}
-    public void setEquipments(String equipments){this.equipments= equipments;}
+    public void setID(Int ID){this.ID= ID;}
+    public void setName(Varchar name){this.name= name;}
+    public void setAddress(Varchar address){this.address= address;}
+    public void setZIP_code(Varchar ZIP_code){this.ZIP_code= ZIP_code;}
+    public void setMail(Varchar mail){this.mail= mail;}
+    public void setPicture(Varchar picture){this.picture= picture;}
+    public void setRoomAmmount(Int roomAmmount) {this.roomAmmount= roomAmmount;}
+    public void setReception(Varchar reception){this.reception= reception;}
+    public void setDescription(Varchar description){this.description= description;}
+    public void setEquipments(Varchar equipments){this.equipments= equipments;}
     public void setAuthorizationPets(boolean authorizationPets){this.authorizationPets= authorizationPets;}
 
 

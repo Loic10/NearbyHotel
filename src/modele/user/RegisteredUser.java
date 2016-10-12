@@ -1,5 +1,7 @@
 package modele.user;
 
+import modele.Int;
+import modele.Varchar;
 import modele.Ville;
 
 /**
@@ -8,20 +10,16 @@ import modele.Ville;
  */
 public class RegisteredUser extends User {
 
-    private String lastName;
-    private String firstName;
+    private Varchar lastName;
+    private Varchar firstName;
     private Ville ville;
-    private String login;
-    private int password;
-
-    private final int sizeLogin= 25;
-    private final int sizePassword= 25;
-    private final int sizeLastName= 25;
-    private final int sizeFirstName= 25;
+    private Varchar login;
+    private Int password;
 
 
 
-    public RegisteredUser(String login, int password, String lastName, String firstName, Ville ville){
+
+    public RegisteredUser(Varchar login, Int password, Varchar lastName, Varchar firstName, Ville ville){
 
         this.login= login;
         this.password= password;
@@ -34,16 +32,16 @@ public class RegisteredUser extends User {
 
 
 
-    public String getLogin(){return login;}
-    public int getPassword(){return password;}
-    public String getLastName(){return lastName;}
-    public String getFirstName(){return firstName;}
+    public Varchar getLogin(){return login;}
+    public Int getPassword(){return password;}
+    public Varchar getLastName(){return lastName;}
+    public Varchar getFirstName(){return firstName;}
     public Ville getVille(){return ville;}
 
-    public void setLogin(String login){this.login= login;}
-    public void setPassword(int password){this.password= password;}
-    public void setLastName(String lastName){this.lastName= lastName;}
-    public void setFirstName(String firstName){this.firstName= firstName;}
+    public void setLogin(Varchar login){this.login= login;}
+    public void setPassword(Int password){this.password= password;}
+    public void setLastName(Varchar lastName){this.lastName= lastName;}
+    public void setFirstName(Varchar firstName){this.firstName= firstName;}
     public void setVille(Ville ville){this.ville= ville;}
 
 

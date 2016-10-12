@@ -1,5 +1,6 @@
 package modele.user;
 
+import modele.Int;
 import modele.Ville;
 
 /**
@@ -8,22 +9,20 @@ import modele.Ville;
  */
 public abstract class User {
 
-    protected int ID;
-
-    protected final int sizeID= 11;
+    protected Int ID;
 
 
 
     public User(){}
-    public User(int ID){this.ID= ID;}
+    public User(Int ID){this.ID= ID;}
 
 
 
 
     public User get(){return this;}
-    public int getID(){return ID;}
+    public Int getID(){return ID;}
 
-    public void setID(int ID){this.ID= ID;}
+    public void setID(Int ID){this.ID= ID;}
 
 
 

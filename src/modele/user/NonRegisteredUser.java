@@ -1,5 +1,6 @@
 package modele.user;
 
+import modele.Varchar;
 import modele.Ville;
 
 /**
@@ -8,16 +9,14 @@ import modele.Ville;
  */
 public class NonRegisteredUser extends User {
 
-    private String lastName;
-    private String firstName;
+    private Varchar lastName;
+    private Varchar firstName;
     private Ville ville;
 
-    private final int sizeLastName= 25;
-    private final int sizeFirstName= 25;
 
 
 
-    public NonRegisteredUser(String lastName, String firstName, Ville ville){
+    public NonRegisteredUser(Varchar lastName, Varchar firstName, Ville ville){
 
         this.lastName= lastName;
         this.firstName= firstName;
@@ -28,12 +27,12 @@ public class NonRegisteredUser extends User {
 
 
 
-    public String getLastName(){return lastName;}
-    public String getFirstName(){return firstName;}
+    public Varchar getLastName(){return lastName;}
+    public Varchar getFirstName(){return firstName;}
     public Ville getVille(){return ville;}
 
-    public void setLastName(String lastName){this.lastName= lastName;}
-    public void setFirstName(String firstName){this.firstName= firstName;}
+    public void setLastName(Varchar lastName){this.lastName= lastName;}
+    public void setFirstName(Varchar firstName){this.firstName= firstName;}
     public void setVille(Ville ville){this.ville= ville;}
 
 
